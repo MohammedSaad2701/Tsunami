@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F6F7F8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #20A4F3;
+    color: #F6F7F8;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.alert-section {
+    background: #F6F7F8;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #011627;
+}
+
+.alerts-container {
+    text-align: left;
+    padding: 10px;
+}
+
+.alert {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.earthquake-alert {
+    background: #FF5F87;
+    color: #F6F7F8;
+}
+
+.tsunami-alert {
+    background: #ffcc00;
+    color: #011627;
+}
+
+#map-container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #2EC4B6;
+}

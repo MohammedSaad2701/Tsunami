@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami Early Warning System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Tsunami Early Warning System</h1>
+    </header>
+
+    <section id="alerts">
+        <div class="alert-section">
+            <h2>Earthquake Alerts (USGS API)</h2>
+            <div id="earthquake-alerts" class="alerts-container">Loading...</div>
+        </div>
+
+        <div class="alert-section">
+            <h2>Tsunami Warnings (NOAA API)</h2>
+            <div id="tsunami-alerts" class="alerts-container">Loading...</div>
+        </div>
+    </section>
+
+    <section id="map-container">
+        <h2>📍 Evacuation Map</h2>
+        <div id="map"></div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
