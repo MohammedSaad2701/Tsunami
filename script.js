@@ -50,28 +50,18 @@ async function fetchEarthquakes() {
 }
 fetchEarthquakes();
 
-//Tsunami Warnings (NOAA RSS Feed)
-const NOAA_TSUNAMI_FEED = "https://www.tsunami.gov/events/xml/PAAQAtom.xml";
+// Fetch Flood Alerts (Placeholder Example)
+async function fetchFloodAlerts() {
+    let floodContainer = document.getElementById('flood-alerts');
+    floodContainer.innerHTML = "Flood warning data is being processed...";
 
-async function fetchTsunamiAlerts() {
-    try {
-        let response = await fetch(NOAA_TSUNAMI_FEED);
-        let text = await response.text();
-        let tsunamiContainer = document.getElementById('tsunami-alerts');
-        tsunamiContainer.innerHTML = "Tsunami Warnings Data (Currently requires XML parsing)";
-
-        // Placeholder example of alert:
+    setTimeout(() => {
         let alertDiv = document.createElement("div");
-        alertDiv.classList.add("alert", "tsunami-alert");
-        alertDiv.innerHTML = `🌊 Warning: Data will be available soon`;
-        tsunamiContainer.appendChild(alertDiv);
-
-    } catch (error) {
-        console.error("Error fetching tsunami alerts:", error);
-        document.getElementById('tsunami-alerts').innerHTML = "⚠️ Failed to load tsunami alerts.";
-    }
+        alertDiv.classList.add("alert", "flood-alert");
+        alertDiv.innerHTML = "🚨 High Flood Risk in Coastal Areas!";
+        floodContainer.appendChild(alertDiv);
+    }, 2000);
 }
-fetchTsunamiAlerts();
 
 //Evacuation Centers (Manually Added)
 let evacuationCenters = [
